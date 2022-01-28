@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Earthquake Markers</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./moment.js"></script>
+    <script src="./index.js"></script>
+
+  </head>
+  <body>
+        <div class="container">
+
+            <div id="map"></div>
+            <div id="content" class="panel-container">
+              <div  class="iw-container">
+                <div class="title">
+                  <div id="title">Hawaii</div>
+                </div> 
+                <div class="content">
+                  <strong>Location:</strong>
+                  <div id="location"> 4 km S of Pāhala, Hawaii</div>
+                  <strong>Datetime:</strong>
+                  <div id="time">01 Thu, 2022 04:47:24 pm</div>
+                </div>
+            </div>
+        </div>
+      
+        
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6K7nILEq00oXmtUMkHSyRwRdx7WqLaJw&callback=initMap&v=weekly&channel=2"
+      async
+    ></script>
+  </body>
+</html>

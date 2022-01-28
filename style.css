@@ -1,0 +1,77 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ #map {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    width: 80%;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+/* Container that hold the whole layout to avoid overfilled screen*/
+  .container {
+      margin: 0;
+      width: 1200px;
+      max-width: 100%;
+      overflow: hidden;
+      display: flex;
+      padding-left: 50px;
+    
+  }
+
+  .panel-container {
+    width: 40%;
+    padding: 10px;
+}
+  /*Info Window customed style*/
+  .iw-container {
+    margin-bottom: 10px;
+    width: 250px !important;
+    top: 15px !important;
+    left: 0px !important;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+    border: 1px solid rgba(72, 181, 233, 0.6);
+    border-radius: 2px 2px 10px 10px;
+  }
+  .iw-container .title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #48b5e9;
+    color: white;
+    margin: 0;
+    border-radius: 2px 2px 0 0;
+  }
+  .iw-container .content {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-right: 1px;
+    padding: 15px 5px 10px 15px;
+    max-height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  /*end Info Window customed style*/
+
+
+  /*Mobile screen that smaller 480px*/
+  @media screen and (max-device-width: 480px){
+    .container {
+      background: #fff;
+      display: flex;
+      flex-flow: row wrap;
+      flex: 1;
+    }
+  }
+  
+  
