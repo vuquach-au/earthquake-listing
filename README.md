@@ -18,7 +18,7 @@ USGS Earthquake Hazards Program, responsible for monitoring, reporting, and rese
 
 ============================================##=======================================
 
-#earthquake Website Displaying the location that happened the past 24 hours
+#earthquake Website displaying the location that happened the past 24 hours
 
 A javascript package for displaying recent earthquake information on a webpage.
 
